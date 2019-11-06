@@ -5,7 +5,8 @@ namespace ImagePreviewAPI.Models.Requests
 {
     public class ImagePreviewRequest
     {
-        [Required(ErrorMessage = "'ImageUrls' field is required. It should be array.")]
-        public string[] ImageUrls { get; set; }
+        [Required(ErrorMessage = "'imagesUrls' field is required!")]
+        [MinLength(1, ErrorMessage = "You must provide at least one link!")]
+        public string[] ImagesUrls { get; set; }
     }
 }

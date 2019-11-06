@@ -27,7 +27,7 @@ namespace ImagePreviewAPI.Controllers
         {
             List<Task<string>> tasks = new List<Task<string>>();
 
-            foreach (string url in requestData.ImageUrls)
+            foreach (string url in requestData.ImagesUrls)
             {
                 tasks.Add(imageUploader.Upload(url));
             }
@@ -50,7 +50,7 @@ namespace ImagePreviewAPI.Controllers
                     string originalUrl = "/original/" + tasks[i].Result + ".jpg";
                     string previewUrl = "/preview/" + tasks[i].Result + ".jpg";
 
-                    uploaded.Add(requestData.ImageUrls[i], new UploadedImagesData
+                    uploaded.Add(requestData.ImagesUrls[i], new UploadedImagesData
                     {
                         Original = originalUrl,
                         Preview = previewUrl
@@ -58,7 +58,7 @@ namespace ImagePreviewAPI.Controllers
                 }
                 else
                 {
-                    failed.Add(requestData.ImageUrls[i]);
+                    failed.Add(requestData.ImagesUrls[i]);
                 }
             }
 
