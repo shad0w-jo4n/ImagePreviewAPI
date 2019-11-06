@@ -26,7 +26,7 @@ namespace ImagePreviewAPI.Services
 
                 if (skBitmap == null) throw new Exception();
 
-                using Stream outputStream = File.OpenWrite(environment.WebRootPath + "/uploaded/" + guid + ".jpg");
+                using Stream outputStream = File.OpenWrite(environment.WebRootPath + "/original/" + guid + ".jpg");
                 using Stream outputResizedStream = File.OpenWrite(environment.WebRootPath + "/preview/" + guid + ".jpg");
 
                 using (SKImage skImage = SKImage.FromBitmap(skBitmap))

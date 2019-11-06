@@ -14,13 +14,15 @@
     <Folder Include="Models\" />
     <Folder Include="Models\Requests\" />
     <Folder Include="wwwroot\" />
-    <Folder Include="wwwroot\uploaded\" />
+    <Folder Include="wwwroot\original\" />
     <Folder Include="wwwroot\preview\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\example.html" />
     <Content Remove="wwwroot\uploaded\a2da9e3b-b30c-4133-80e7-0eebca3f3745.jpg" />
+    <Content Remove="wwwroot\uploaded\438b1642-7fc5-48d4-9f44-72743a2a11aa.jpg" />
+    <Content Remove="wwwroot\uploaded\4bd20936-1a7c-4c74-a28b-b85cb83c688f.jpg" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="SkiaSharp" Version="1.68.0" />
