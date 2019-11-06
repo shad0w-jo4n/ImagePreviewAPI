@@ -23,7 +23,7 @@ namespace ImagePreviewAPI.Controllers
 
         [HttpPost]
         [Route("upload")]
-        public JsonResult Upload([FromBody] ImagePreviewRequest requestData)
+        public JsonResult Upload([FromBody] UploadImageRequest requestData)
         {
             List<Task<string>> tasks = new List<Task<string>>();
 
