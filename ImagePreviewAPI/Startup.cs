@@ -37,8 +37,6 @@ namespace ImagePreviewAPI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
             app.UseStaticFiles();
 
             app.UseRouting();
