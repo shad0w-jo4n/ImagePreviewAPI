@@ -29,6 +29,9 @@ Written in C# (ASP.NET Core WebAPI).
 This service has only one method.
 
 **POST** /api/image/upload
+
+Upload image/images by links.
+
 ### Input
 Content-Type: application/json
 > Another mime-types doesn't supported.
