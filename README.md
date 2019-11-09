@@ -10,8 +10,8 @@ Written in C# (ASP.NET Core WebAPI).
 #### Steps
 1. Download/clone repository.
 2. Compile solution and run project.
-
-    `dotnet run --configuration Release`
+    
+    `cd ImagePreviewAPI && dotnet run --configuration Release`
 3. Go to [localhost:5000](http://localhost:5000).
 ### Docker
 #### Requirments
