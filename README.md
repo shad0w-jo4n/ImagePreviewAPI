@@ -25,6 +25,9 @@ Written in C# (ASP.NET Core WebAPI).
 3. Go to [localhost](http://localhost).
 > If you use Docker Toolbox, you need go to `http://ip-addr/`, where `ip-addr` is ip-address of virtual machine.
 
+
+### Info
+Don't be scared, server should return 404 HTTP status code, if it runned.
 ## API Documentation
 This service has only one method.
 
